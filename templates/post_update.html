@@ -1,0 +1,18 @@
+{% extends 'pizdech.html' %}
+
+{% block title %}
+Обновление нигеров
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Обновление нигеров </h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" value="{{ article.title }}" placeholder="Введите имя негра"><br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Введите краткое описание негра">{{ article.intro }}</textarea><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Введите жизнь негра">{{ article.text }}</textarea><br>
+        <input type="submit" class="btn btn-success" value="Обновить негра">
+    </form>
+</div>
+{% endblock %}
+
